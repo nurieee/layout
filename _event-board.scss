@@ -1,0 +1,13 @@
+.event-board {
+    background-color: theme-color("section-bg");
+    flex: 1;
+    .event-content {
+        flex: 1;
+    }
+    .event-time {
+        width: 100px;
+    }
+    .team-container {
+        flex: 1;
+    }
+}

@@ -1,0 +1,37 @@
+.promo-banner {
+    flex: 1;
+    background-color: theme-color("section-bg");
+    border-radius: $border-radius-xxlg;
+    position: relative;
+    box-shadow: $card-box-shadow;
+
+    + .promo-banner {
+        margin-left: $grid-gutter-width;
+    }
+    .banner-info {
+        position: absolute;
+        padding: 2rem;
+        height: 100%;
+        width: 40%;
+    }
+
+    .promo-title {
+        text-transform: uppercase;
+        font-size: $font-size-lg;
+        font-weight: $font-weight-bold;
+        color: color-yiq(theme-color("section-bg"));
+    }
+
+    .promo-description {
+        color: rgba(color-yiq(theme-color("section-bg")), .7);
+    }
+
+    .promo-button {
+        @include gradient-x(theme-color("primary-dark"), theme-color("primary"), 0%, 100%);
+        color: color-yiq(theme-color("primary-dark"));
+        &:hover {
+            @include gradient-x(lighten(theme-color("primary-dark"), 3%), lighten(theme-color("primary"), 3%), 0%, 100%);
+        }
+    }
+
+}
